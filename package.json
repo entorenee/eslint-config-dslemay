@@ -1,10 +1,24 @@
 {
   "name": "eslint-config-dslemay",
   "version": "0.0.1",
+  "author": "Daniel Lemay <daniel@dslemay.com>",
   "description": "Extendable ESLint configuration with common plugins",
   "main": "index.js",
-  "author": "Daniel Lemay <daniel@dslemay.com>",
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "plugins",
+    "configuration",
+    "config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dslemay/eslint-config-dslemay"
+  },
+  "homepage": "https://github.com/dslemay/eslint-config-dslemay#readme",
+  "bugs": {
+    "url": "https://github.com/dslemay/eslint-config-dslemay/issues"
+  },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
