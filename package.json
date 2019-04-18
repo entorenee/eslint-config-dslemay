@@ -32,6 +32,7 @@
     "eslint": ">= 5.0.0"
   },
   "scripts": {
+    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "lint-staged": "lint-staged"
   }
 }
