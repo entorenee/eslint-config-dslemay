@@ -36,6 +36,7 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint-config-prettier": "^4.1.0"
   }
 }
