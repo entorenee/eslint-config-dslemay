@@ -34,5 +34,8 @@
   "scripts": {
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "lint-staged": "lint-staged"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^4.1.0"
   }
 }
