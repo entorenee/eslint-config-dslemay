@@ -1,0 +1,41 @@
+module.exports = {
+  parser: 'babel-eslint',
+  env: {
+    es6: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2019,
+    sourceType: 'module',
+  },
+  rules: {
+    'constructor-super': 'error',
+    'no-class-assign': 'error',
+    'no-const-assign': 'error',
+    'no-dupe-class-members': 'error',
+    'no-duplicate-imports': 'error',
+    'no-new-symbol': 'error',
+    'no-restricted-imports': 'off',
+    'no-this-before-super': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-rename': 'error',
+    'no-var': 'error',
+    'object-shorthand': ['error', 'always'],
+    'prefer-const': 'error',
+    'prefer-destructuring': [
+      'error',
+      {
+        array: true,
+        object: true,
+      },
+      { enforceForRenamedProperties: false },
+    ],
+    'prefer-numeric-literals': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'require-yield': 'error',
+    'sort-imports': 'off',
+    'symbol-description': 'error',
+  },
+};
