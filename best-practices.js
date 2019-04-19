@@ -10,7 +10,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     complexity: 'error',
     'consistent-return': 'error',
-    curly: 'error',
+    curly: ['error', 'all'], // Cannot use multiline with Prettier integration
     'default-case': 'error',
     'dot-location': 'error',
     'dot-notation': 'error',
