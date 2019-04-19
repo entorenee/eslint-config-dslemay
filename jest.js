@@ -3,7 +3,7 @@ module.exports = {
     'jest/globals': true,
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
   },
   plugins: ['jest'],
   rules: {
