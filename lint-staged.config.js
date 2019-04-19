@@ -1,3 +1,4 @@
 module.exports = {
-  '*.{js,md}': ['prettier --write', 'git add'],
+  '*.js': ['prettier --write', 'eslint --fix', 'git add'],
+  '*.md': ['prettier --write', 'git add'],
 };
