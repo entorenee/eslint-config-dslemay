@@ -26,7 +26,7 @@ module.exports = {
     'no-empty-pattern': 'error',
     'no-eq-null': 'error',
     'no-eval': 'error',
-    'no-exend-native': 'error',
+    'no-extend-native': 'error',
     'no-extra-bind': 'error',
     'no-extra-label': 'error',
     'no-fallthrough': 'error',
@@ -34,7 +34,7 @@ module.exports = {
     'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
-    'np-implied-eval': 'error',
+    'no-implied-eval': 'error',
     'no-invalid-this': 'error', // Confirm sourceType module
     'no-iterator': 'error',
     'no-labels': 'error',
