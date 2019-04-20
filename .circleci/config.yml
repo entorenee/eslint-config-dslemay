@@ -24,3 +24,9 @@ jobs:
       - run:
           name: Check for missing rules
           command: yarn test
+      - run:
+          name: Run lint check
+          command: yarn lint
+      - run:
+          name: Check code formatting
+          command: yarn prettier

@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: ['prettier'],
   rules: {
-    'always-bracket-new-line': ['error', 'consistent'],
     camelcase: ['error', { properties: 'always', ignoreDestructuring: false }],
     'capitalized-comments': 'off',
     'consistent-this': 'off',
@@ -27,15 +26,6 @@ module.exports = {
       { exceptAfterSingleLine: false },
     ],
     'max-depth': ['error', 4],
-    'max-length': [
-      'error',
-      {
-        code: 80,
-        tabWidth: 2,
-        ignoreComments: true,
-        ignoreUrls: true,
-      },
-    ],
     'max-lines': [
       'error',
       {
