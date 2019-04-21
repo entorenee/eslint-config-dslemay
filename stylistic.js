@@ -39,7 +39,9 @@ module.exports = {
     'max-params': ['error', 6],
     'max-statements': 'off',
     'max-statements-per-line': ['error', { max: 1 }],
-    'multiline-comment-style': ['error', 'starred-block'],
+
+    // Like this in concept, but was too strict even in developing config
+    'multiline-comment-style': 'off',
     'new-cap': [
       'error',
       {
