@@ -8,5 +8,6 @@ module.exports = {
     './best-practices.js',
     './stylistic.js',
     './es6.js',
+    './import.js',
   ],
 };
