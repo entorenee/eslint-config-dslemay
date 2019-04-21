@@ -1,6 +1,6 @@
 # ESLint Config Dslemay
 
-This project contains an extandable ESLint configuration that I use on my projects. It manages the dependencies and configuration of various plugins which can then be extended into the source project.
+I rely on ESLint heavily for my projects, but was annoyed with managing the config and dependencies across many different repositories. This project contains an extendable ESLint configuration and is the base for my projects. It manages the dependencies and configuration of various plugins which can then be extended into the source project. This reduces the overhead and duplication of managing configuration across many projects. It also reduces the number of dependencies each project must directly install and manage.
 
 ## Requirements and Installation
 
@@ -27,3 +27,37 @@ module.exports = {
   },
 };
 ```
+
+This root extension contains base configuration used for all projects. Parts of the base configuration can be extended individually, if you only want to use some of the rules. This is an edge case and should be approached with caution to avoid gaps in rule coverage. The rules object in your local ESLint config can be used to override any rule definitions which do not work for your project.
+
+- **Possible Errors:** Sets ESLint core [possible errors rules](https://eslint.org/docs/rules/#possible-errors). These rule definitions can be extended as `dslemay/possible-errors`.
+- **Best Practices:** Sets ESLint core [best practices rules](https://eslint.org/docs/rules/#best-practices). These rule definitions can be extended as `dslemay/best-practices`
+- **Stylistic:** Extends [Prettier plugin](https://github.com/prettier/eslint-config-prettier) for code formatting and sets other ESLint core [stylistic rules](https://github.com/prettier/eslint-config-prettier). These rule definitions can be extended as `dslemay/stylistic`. For more information about using Prettier with this config read [Integration with Prettier](#integration-with-prettier)
+- **ES6:** Adds [rules](https://eslint.org/docs/rules/#ecmascript-6) related to ES6 and beyond development including setting configuration options and using babel-eslint as the parser. These rule definitions and config can be extended as `dslemay/es6`
+- **Import:** Adds the [ESLint import plugin](https://github.com/benmosher/eslint-plugin-import) and sets the assocated rules. This helps to catch poor import paths, grouping of imports, and more. These rule definitions can be extended as `dslemay/import`
+
+All of the related plugins are installed as dependencies of this package and should not require any additional installation or management in your package.
+
+## Integration with Prettier
+
+Prettier provides consistent code format and can reduce common stylistic bike-shedding. This configuration does not install Prettier or provide a Prettier configuration file. Some additional configuration is required in your project to use Prettier.
+
+**Install Prettier:**
+
+```shell
+yarn add --dev prettier
+```
+
+```shell
+npm install -D prettier
+```
+
+If you would like to have Prettier errors show up as ESLint errors and be resolved with `eslint --fix`, install and use the [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier). Otherwise, files can be formatted on save in most editors or through a separate Prettier script.
+
+If you would like to override any of the Prettier options create a `.prettierrc` file with the available [configuration options](https://prettier.io/docs/en/configuration.html).
+
+## Additional Plugins/rules available
+
+This package also provides configuration for other commonly used plugins and their associate rules. These are not included in the base configuration by default and can be added to the `extends` array on an as needed basis.
+
+- **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
