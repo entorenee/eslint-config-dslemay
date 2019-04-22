@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dslemay",
-  "version": "0.0.1",
+  "version": "0.0.0-semantically-released",
   "author": "Daniel Lemay <daniel@dslemay.com>",
   "description": "Extendable ESLint configuration with dslemay's personal preferences",
   "main": "index.js",
