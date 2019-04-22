@@ -1,6 +1,7 @@
 # ESLint Config Dslemay
 
 [![CircleCI](https://circleci.com/gh/dslemay/eslint-config-dslemay.svg?style=svg)](https://circleci.com/gh/dslemay/eslint-config-dslemay)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 I rely on ESLint heavily for my projects, but was annoyed with managing the config and dependencies across many different repositories. This project contains an extendable ESLint configuration and is the base for my projects. It manages the dependencies and configuration of various plugins which can then be extended into the source project. This reduces the overhead and duplication of managing configuration across many projects. It also reduces the number of dependencies each project must directly install and manage.
 
