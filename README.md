@@ -1,5 +1,7 @@
 # ESLint Config Dslemay
 
+[![CircleCI](https://circleci.com/gh/dslemay/eslint-config-dslemay.svg?style=svg)](https://circleci.com/gh/dslemay/eslint-config-dslemay)
+
 I rely on ESLint heavily for my projects, but was annoyed with managing the config and dependencies across many different repositories. This project contains an extendable ESLint configuration and is the base for my projects. It manages the dependencies and configuration of various plugins which can then be extended into the source project. This reduces the overhead and duplication of managing configuration across many projects. It also reduces the number of dependencies each project must directly install and manage.
 
 ## Requirements and Installation
