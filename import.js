@@ -26,6 +26,9 @@ module.exports = {
     'import/no-cycle': 'error',
     'import/no-default-export': 'off',
     'import/no-deprecated': 'off',
+
+    // Favor import variant which supports Flow type imports
+    'no-duplicate-imports': 'off',
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'off',
     'import/no-extraneous-dependencies': [
