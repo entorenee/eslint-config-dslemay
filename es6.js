@@ -7,6 +7,7 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
+  plugins: ['babel'],
   rules: {
     'constructor-super': 'error',
     'no-class-assign': 'error',
@@ -37,5 +38,29 @@ module.exports = {
     'require-yield': 'error',
     'sort-imports': 'off',
     'symbol-description': 'error',
+
+    /* Babel plugin options to eliminate false positives
+     * for experimental features
+     */
+    'new-cap': 'off',
+    'babel/new-cap': [
+      'error',
+      {
+        newIsCap: true,
+        capIsNew: true,
+        properties: true,
+      },
+    ],
+    'no-invalid-this': 'off',
+    'babel/no-invalid-this': 'error',
+    'valid-typeof': 'off',
+    'babel/valid-typeof': 'error',
+
+    // Unused babel plugin rules
+    'babel/camelcase': 'off',
+    'babel/no-unused-expressions': 'off',
+    'babel/object-curly-spacing': 'off',
+    'babel/semi': 'off',
+    'babel/quotes': 'off',
   },
 };
