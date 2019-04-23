@@ -67,8 +67,7 @@ module.exports = {
         groups: [
           'builtin',
           ['external', 'internal'],
-          ['parent', 'sibling'],
-          'index',
+          ['parent', 'sibling', 'index'],
         ],
         'newlines-between': 'always-and-inside-groups',
       },
