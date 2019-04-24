@@ -28,7 +28,8 @@
     "import.js",
     "jest.js",
     "possible-errors.js",
-    "stylistic.js"
+    "stylistic.js",
+    "react.js"
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
