@@ -56,6 +56,7 @@
     "test": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/jest.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./test/react.js",
     "lint": "eslint .",
     "lint-staged": "lint-staged",
     "prettier": "is-ci prettier:check prettier:format",
