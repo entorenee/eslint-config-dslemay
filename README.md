@@ -64,3 +64,4 @@ If you would like to override any of the Prettier options create a `.prettierrc`
 This package also provides configuration for other commonly used plugins and their associate rules. These are not included in the base configuration by default and can be added to the `extends` array on an as needed basis.
 
 - **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
+- **React:** Configures ESLint for React. Includes rules from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks). To use this ruleset, add `dslemay/react` to the `extends` array in your ESLint config.
