@@ -65,3 +65,4 @@ This package also provides configuration for other commonly used plugins and the
 
 - **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
 - **React:** Configures ESLint for React. Includes rules from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks). To use this ruleset, add `dslemay/react` to the `extends` array in your ESLint config.
+- **JSX-A11y:** Configures ESLint to check JSX for accessibility issues. Includes the rules from [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y). To use this ruleset, add `dslemay/jsx-a11y` to the `extends` array in your ESLint config.

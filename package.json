@@ -29,7 +29,8 @@
     "jest.js",
     "possible-errors.js",
     "stylistic.js",
-    "react.js"
+    "react.js",
+    "jsx-a11y.js"
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
@@ -51,6 +52,7 @@
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0"
   },
@@ -58,6 +60,7 @@
     "test": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/jest.js",
+    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./test/jsx-a11y.js",
     "find-new-rules:react": "eslint-find-rules --unused ./test/react.js",
     "lint": "eslint .",
     "lint-staged": "lint-staged",
