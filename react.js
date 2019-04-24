@@ -8,7 +8,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   settings: {
     react: {
       version: 'detect',
@@ -131,5 +131,7 @@ module.exports = {
     'react/static-property-placement': ['error', 'static public field'],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };
