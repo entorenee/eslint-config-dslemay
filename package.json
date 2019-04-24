@@ -29,7 +29,8 @@
     "jest.js",
     "possible-errors.js",
     "stylistic.js",
-    "react.js"
+    "react.js",
+    "jsx-a11y.js"
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
@@ -59,6 +60,7 @@
     "test": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./test/jest.js",
+    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./test/jsx-a11y.js",
     "find-new-rules:react": "eslint-find-rules --unused ./test/react.js",
     "lint": "eslint .",
     "lint-staged": "lint-staged",
