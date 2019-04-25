@@ -128,7 +128,6 @@ module.exports = {
 
     // Really depends on structure. Generally use class property.
     'react/state-in-constructor': 'off',
-    'react/static-property-placement': ['error', 'static public field'],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
     'react-hooks/rules-of-hooks': 'error',
