@@ -41,6 +41,16 @@ This root extension contains base configuration used for all projects. Parts of 
 
 All of the related plugins are installed as dependencies of this package and should not require any additional installation or management in your package.
 
+## Additional Plugins/rules available
+
+This package also provides configuration for other commonly used plugins and their associate rules. These are not included in the base configuration by default and can be added to the `extends` array on an as needed basis.
+
+**Note:** Occasionally, the corresponding ESLint plugin must be installed as a dependency in your project. I'm uncertain why this arises in certain cases and may be a result of multiple project dependencies exposing variosu versions of the plugin. If you encounter errors about rules not being found, try installing the corresponding plugin explicitly.
+
+- **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
+- **React:** Configures ESLint for React. Includes rules from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks). To use this ruleset, add `dslemay/react` to the `extends` array in your ESLint config.
+- **JSX-A11y:** Configures ESLint to check JSX for accessibility issues. Includes the rules from [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y). To use this ruleset, add `dslemay/jsx-a11y` to the `extends` array in your ESLint config.
+
 ## Integration with Prettier
 
 Prettier provides consistent code format and can reduce common stylistic bike-shedding. This configuration does not install Prettier or provide a Prettier configuration file. Some additional configuration is required in your project to use Prettier.
@@ -58,11 +68,3 @@ npm install -D prettier
 If you would like to have Prettier errors show up as ESLint errors and be resolved with `eslint --fix`, install and use the [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier). Otherwise, files can be formatted on save in most editors or through a separate Prettier script.
 
 If you would like to override any of the Prettier options create a `.prettierrc` file with the available [configuration options](https://prettier.io/docs/en/configuration.html).
-
-## Additional Plugins/rules available
-
-This package also provides configuration for other commonly used plugins and their associate rules. These are not included in the base configuration by default and can be added to the `extends` array on an as needed basis.
-
-- **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
-- **React:** Configures ESLint for React. Includes rules from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks). To use this ruleset, add `dslemay/react` to the `extends` array in your ESLint config.
-- **JSX-A11y:** Configures ESLint to check JSX for accessibility issues. Includes the rules from [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y). To use this ruleset, add `dslemay/jsx-a11y` to the `extends` array in your ESLint config.
