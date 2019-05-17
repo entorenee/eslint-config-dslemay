@@ -69,7 +69,7 @@ module.exports = {
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
-    'react/no-string-refs': 'error',
+    'react/no-string-refs': ['error', { noTemplateLiterals: true }],
     'react/no-this-in-sfc': 'error',
     'react/no-typos': 'error',
     'react/no-unescaped-entities': 'error',
@@ -128,6 +128,7 @@ module.exports = {
 
     // Really depends on structure. Generally use class property.
     'react/state-in-constructor': 'off',
+    'react/static-property-placement': ['error', 'static public field'],
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
     'react-hooks/rules-of-hooks': 'error',
