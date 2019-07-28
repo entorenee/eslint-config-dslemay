@@ -11,6 +11,7 @@ module.exports = {
     'jest/expect-expect': 'off',
     'jest/lowercase-name': 'off',
     'jest/no-alias-methods': 'off',
+    'jest/no-commented-out-tests': 'warn',
     'jest/no-disabled-tests': 'warn',
     'jest/no-empty-title': 'error',
     'jest/no-focused-tests': 'error',
