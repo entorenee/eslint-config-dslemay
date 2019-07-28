@@ -13,6 +13,7 @@ module.exports = {
     'jest/no-alias-methods': 'off',
     'jest/no-commented-out-tests': 'warn',
     'jest/no-disabled-tests': 'warn',
+    'jest/no-duplicate-hooks': 'error',
     'jest/no-empty-title': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-hooks': 'off',
