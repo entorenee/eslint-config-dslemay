@@ -18,6 +18,7 @@ module.exports = {
     'jest/no-focused-tests': 'error',
     'jest/no-hooks': 'off',
     'jest/no-identical-title': 'error',
+    'jest/no-if': 'error',
     'jest/no-jasmine-globals': 'warn',
     'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': ['warn', { maxSize: 300 }],
