@@ -23,6 +23,7 @@ module.exports = {
     'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': ['warn', { maxSize: 300 }],
     'jest/no-mocks-import': 'error',
+    'jest/no-standalone-expect': 'error',
     'jest/no-test-callback': 'off',
     'jest/no-test-prefixes': 'off',
     'jest/no-test-return-statement': 'warn',
