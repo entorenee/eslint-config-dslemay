@@ -89,6 +89,13 @@ module.exports = {
     ],
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'react/sort-comp': [
       'error',
       {
