@@ -934,7 +934,7 @@ eslint-config-prettier@^6.2.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-find-rules@^3.3.1:
+eslint-find-rules@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-3.4.0.tgz#efc76af591409f7b9960ab360aa62ab42815ccb1"
   integrity sha512-LLaPdZ2C9Q20uXNQMW44CjhlCFiUTdoy/gENudmOYMlqLn/8F6wzPoyTAAa2aTpIED4q5/Z5Obw58lTEKidi+A==
