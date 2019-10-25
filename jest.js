@@ -47,5 +47,6 @@ module.exports = {
     'jest/valid-describe': 'error',
     'jest/valid-expect': 'error',
     'jest/valid-expect-in-promise': 'error',
+    'jest/valid-title': 'off',
   },
 };
