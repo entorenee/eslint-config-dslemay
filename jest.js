@@ -42,6 +42,7 @@ module.exports = {
     'jest/prefer-to-contain': 'warn',
     'jest/prefer-to-have-length': 'warn',
     'jest/prefer-todo': 'warn',
+    'jest/require-to-throw-message': 'warn',
     'jest/require-top-level-describe': 'off', // Project dependent
     'jest/require-tothrow-message': 'off',
     'jest/valid-describe': 'error',
