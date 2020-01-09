@@ -9,5 +9,9 @@ module.exports = {
     './stylistic.js',
     './es6.js',
     './import.js',
+    // Remaining rules included to catch defunct rule errors
+    './jest.js',
+    './jsx-a11y.js',
+    './react.js',
   ],
 };
