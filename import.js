@@ -39,9 +39,9 @@ module.exports = {
           '**/__mocks__/**', // jest pattern
           '**/jest/**', // contain jest config and setup
           '**/jest.config.js', //jest pattern
-          '**/*.test.{js,jsx}', // test files
+          '**/*.test.{js,jsx,ts,tsx}', // test files
           '**/stories/**', // storybook pattern
-          '**/*.stories.{js,jsx}', // storybook pattern
+          '**/*.stories.{js,jsx,tsx}', // storybook pattern
           '**/webpack.config.js', // webpack pattern
           '**/webpack.config.*.js', // webpack pattern
         ],
