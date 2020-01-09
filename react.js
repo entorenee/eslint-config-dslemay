@@ -37,7 +37,7 @@ module.exports = {
       'error',
       { props: 'never', children: 'never' },
     ],
-    'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
+    'react/jsx-filename-extension': 'off',
     'react/jsx-fragments': ['error', 'syntax'],
     'react/jsx-handler-names': 'off',
     'react/jsx-key': 'error',
