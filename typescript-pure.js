@@ -71,11 +71,7 @@ module.exports = {
     '@typescript-eslint/no-array-constructor': 'error',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'error',
-    'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': [
-      'error',
-      { ignoreNumericLiteralTypes: true, ignoreEnums: true },
-    ],
+    '@typescript-eslint/no-magic-numbers': 'off',
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
     'no-unused-vars': 'off',
