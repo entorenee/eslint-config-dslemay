@@ -2,6 +2,9 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: ['prettier/@typescript-eslint', 'plugin:import/typescript'],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': ['error', { default: 'array' }],
@@ -34,7 +37,7 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-type-alias': 'off',
-    '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/no-unnecessary-condition': 'off', // Experience has shown a lot of false positives
     '@typescript-eslint/no-unnecessary-qualifier': 'warn',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
@@ -63,17 +66,15 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
     // Extension Rules https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
+    camelcase: 'off',
+    '@typescript-eslint/camelcase': 'error',
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'error',
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'error',
-    'no-magic-numbers': 'off',
-    '@typescript-eslint/no-magic-numbers': [
-      'error',
-      { ignoreNumericLiteralTypes: true, ignoreEnums: true },
-    ],
+    '@typescript-eslint/no-magic-numbers': 'off',
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
     'no-unused-vars': 'off',
