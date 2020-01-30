@@ -63,6 +63,8 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'warn',
     // Extension Rules https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
+    camelcase: 'off',
+    '@typescript-eslint/camelcase': 'error',
     'default-param-last': 'off',
     '@typescript-eslint/default-param-last': 'error',
     'no-array-constructor': 'off',
