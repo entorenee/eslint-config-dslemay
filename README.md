@@ -50,6 +50,7 @@ This package also provides configuration for other commonly used plugins and the
 - **Jest:** Configures ESLint to recognize Jest globals and use the [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest) with accompanying rules. To use this ruleset, add `'dslemay/jest'` to the `extends` array in your ESLint config.
 - **React:** Configures ESLint for React. Includes rules from [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks). To use this ruleset, add `dslemay/react` to the `extends` array in your ESLint config.
 - **JSX-A11y:** Configures ESLint to check JSX for accessibility issues. Includes the rules from [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y). To use this ruleset, add `dslemay/jsx-a11y` to the `extends` array in your ESLint config.
+- **TypeScript:** Configures ESLint to work with TypeScript including disabling some base ESLint rules which do not interface well with TypeScript files. Includes rules from [@typescript-eslint plugin and parser](https://github.com/typescript-eslint/typescript-eslint). If your project is pure TypeScript, add `dslemay/typescript-pure` to the `extends` array in your ESLint config. If your project is a mix of TypeScript and JavaScript, use `dslemay/typescript` instead. The only difference is that the latter applies the TypeScript rules as an override to `.tsx?` files rather than globally.
 
 ## Integration with Prettier
 
