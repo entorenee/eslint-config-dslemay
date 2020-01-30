@@ -52,6 +52,8 @@ This package also provides configuration for other commonly used plugins and the
 - **JSX-A11y:** Configures ESLint to check JSX for accessibility issues. Includes the rules from [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y). To use this ruleset, add `dslemay/jsx-a11y` to the `extends` array in your ESLint config.
 - **TypeScript:** Configures ESLint to work with TypeScript including disabling some base ESLint rules which do not interface well with TypeScript files. Includes rules from [@typescript-eslint plugin and parser](https://github.com/typescript-eslint/typescript-eslint). If your project is pure TypeScript, add `dslemay/typescript-pure` to the `extends` array in your ESLint config. If your project is a mix of TypeScript and JavaScript, use `dslemay/typescript` instead. The only difference is that the latter applies the TypeScript rules as an override to `.tsx?` files rather than globally.
 
+The TypeScript ruleset relies on Type definitions and being aware of the location of your TSConfig. By default, it looks in the root directory for `'./tsconfig.json'`. If your TSConfig is located in a different place or has a different name, you will need to configure the [parser options](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration) as a local override.
+
 ## Integration with Prettier
 
 Prettier provides consistent code format and can reduce common stylistic bike-shedding. This configuration does not install Prettier or provide a Prettier configuration file. Some additional configuration is required in your project to use Prettier.

@@ -2,6 +2,9 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: ['prettier/@typescript-eslint', 'plugin:import/typescript'],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': ['error', { default: 'array' }],
