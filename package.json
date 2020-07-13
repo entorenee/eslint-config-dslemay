@@ -35,8 +35,8 @@
     "typescript-pure.js"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "eslint": "^6.3.0",
     "eslint-find-rules": "^3.5.0",
     "husky": "^4.2.5",
